@@ -36,6 +36,7 @@ styles.css: A CSS file that provides styling to the app.
 ---
 
 Explanation of the code
+---
 The App function is the main function that renders the app. It uses useState and useEffect hooks to manage the app's state and lifecycle. The app's state includes an array of tasks, an array of flowers, an array of garden locations, a list name, and a user name.
 
 The useEffect hook is used to add a new flower to the garden every 24 hours. This is done by creating a timer using setInterval that runs every 24 hours and adds a new flower to the flowers state array using setFlowers. The useEffect hook also returns a function that clears the timer using clearInterval when the component unmounts.
